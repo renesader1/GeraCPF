@@ -13,18 +13,18 @@
     <h1 class="titulo-Pincipal">Insira os 8 primeiros digitos de um CPF</h1>
 
     <div class="conjunto-CPF-Inputs">
-      <input type="text" class="input-CPF" id="d1" maxlength="1" />
-      <input type="text" class="input-CPF" id="d2" maxlength="1" />
-      <input type="text" class="input-CPF" id="d3" maxlength="1" />
-      <input type="text" class="input-CPF" id="d4" maxlength="1" />
-      <input type="text" class="input-CPF" id="d5" maxlength="1" />
-      <input type="text" class="input-CPF" id="d6" maxlength="1" />
-      <input type="text" class="input-CPF" id="d7" maxlength="1" />
-      <input type="text" class="input-CPF" id="d8" maxlength="1" />
-    </div>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+      <input type="text" class="input-CPF" maxlength="1" min="0" max="9" required/>
+    </div> 
 
     <select name="lista-Estados" id="lista-Estados" class="lista-Estados">
-      <option value="">- UF -</option>
+      <option value=""> -UF- </option>
       <option value="Acre">Acre - AC</option>
       <option value="Alagoas">Alagoas - AL</option>
       <option value="Amapá">Amapá - AP</option>
@@ -55,9 +55,11 @@
     </select>
 
     <input
-
       type="submit" name="envia-CPF-Botão" id="envia-CPF-Botão" class="envia-CPF-Botão" value="Gerar CPF"
     />
+
+    <h2 class="txt-CPF-Completo">CPF completo: </h2>
+    <p class="CPF" id="CPF"></p>
 
     <script src="Script.js"></script>
   </body>
